@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Display </title>
+    <style>
+        /* display na 4 type */
+        /* 1. block element
+        2. inline element
+        3. inline-block element
+        4. None element */
+        /*  */
+        /*  */
+        /*  */
+        /* 1. type block element */
+        
+        .main * {
+            border: 3px solid green;
+            padding: 20px;
+            display: block;
+        }
+        /*  */
+        /*  */
+        /* 2. type inline element */
+        
+        .main * {
+            border: 3px solid green;
+            padding: 20px;
+            display: inline;
+        }
+        /*  */
+        /*  */
+        /* 3. type inline-block element */
+        
+        .main * {
+            border: 3px solid green;
+            padding: 20px;
+            display: inline-block;
+        }
+        /*  */
+        /*  */
+        /* 4. type none element kai pan vastu hide end enu jagya pan na rokaay  */
+        
+        h1 {
+            display: block;
+            display: none;
+            /* text ne border hide karva mate thay 6 end thya thi akhu element jatu rahe */
+        }
+        
+        .x {
+            height: 100px;
+            border: 3px solid red;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="gp">Grandparent
+            <ul> Parent
+                <li>Child
+                    <span>SPAN</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1> Heading 1 </h1>
+    <h2> Heading 2 </h2>
+
+    <div class="x"></div>
+
+</body>
+
+</html>
